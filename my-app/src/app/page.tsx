@@ -1,12 +1,10 @@
-'use client'
-
 import Image from 'next/image'
 
-export function LandingPage() {
+export default function Component() {
   return (
     <div className="relative h-screen w-full overflow-hidden bg-black">
       <Image
-        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202024-10-20%20at%203.36.52%E2%80%AFPM-lchmFl19SEsDCZqoQuphcaipfwGtBP.png"
+        src="/bg.png"
         alt="Bustling street scene at sunset"
         layout="fill"
         objectFit="cover"
@@ -18,7 +16,7 @@ export function LandingPage() {
         {/* Logo */}
         <div className="mb-8">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Union-cDvU8qfP5n3NCnQcaZJZC3UwAy14pe.png"
+            src="/Union.png"
             alt="Cyro Studios Logo"
             width={32}
             height={32}
@@ -27,11 +25,11 @@ export function LandingPage() {
         
         {/* Main Content */}
         <div className="text-center">
-          <h1 className="text-8xl font-bold mb-4 leading-none">Cyro Studios</h1>
-          <p className="text-xl max-w-2xl mx-auto">
-            A CreativeStudio company. - We creating visual fun contents
-            for web3 reader providing the connection with future.
-          </p>
+          <h1 className="text-[10rem] font-bold mb-4 leading-none">Cyro Studios</h1>
+        <p className="text-lg max-w-2xl mx-auto text-center">
+  A CreativeStudio company. - We creating visual fun contents<br />
+  for web3 reader providing the connection with future.
+</p>
         </div>
         
         {/* Coming Soon */}
